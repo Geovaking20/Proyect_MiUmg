@@ -1,0 +1,9 @@
+-----------------------------------------
+Entrar al servidor desde el usuario umg
+ssh umg@190.56.14.34 -p 2222
+umg123
+-----------------------------------------------
+Entrar a la base de datos
+sudo mysql -u umg -p
+umg123
+Umg@12345.
