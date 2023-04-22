@@ -1,0 +1,19 @@
+CREATE DATABASE SISTEM_UMG;
+USE SISTEM_UMG;
+
+CREATE TABLE tbl_role (
+  id_role INT NOT NULL AUTO_INCREMENT,
+  name_role VARCHAR(50) NOT NULL,
+  status_role INT NOT NULL,
+  PRIMARY KEY (id_role)
+);
+
+CREATE TABLE tbl_usuarios (
+  id_usuario INT NOT NULL AUTO_INCREMENT,
+  email VARCHAR(50) NOT NULL,
+  password VARCHAR(50) NOT NULL,
+  status INT NOT NULL,
+  id_role INT NOT NULL,
+  PRIMARY KEY (id_usuario),
+  FOREIGN KEY (id_role) REFERENCES tbl_role(id_role)
+)
